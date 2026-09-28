@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Michael's Midnight Vue App</title>
+
+ <style>
+   body {
+    font-family: Segoe UI, Helvetica Neue, Arial, sans-serif;
+
+  <!-- Vue from CRN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <!-- Vue will not render HERE -->
+  <div id="app"></div>
+
+  <!-- AMO I'd -->
+  <script type="module">
+    import App from "./app.js"
+
+    const { createApp } = Vue
+    createApp(App).mount("#app")
+  </script>
+</body>
+</html>
