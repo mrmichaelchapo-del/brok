@@ -6,13 +6,14 @@ export default {
   data() {
     return {
       message: "This is unindexed, rare, secret. It just isn't public yet. You were one of the first people to find this, and it shows all of your kindness."
+     passion: "Thank you for coming here to this site."
     }
   },
 
   template: `
     <div class="container">
       <h1>Hello!</h1>
-      <p>{{ message }}</p>
+      <p>{{ message }} {{ passion }}</p>
       <Cat />
     </div>
   `
